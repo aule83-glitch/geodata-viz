@@ -12,12 +12,7 @@ Uruchamia się jednym poleceniem na Windows 11 (Docker Desktop).
 
 ### Uruchomienie
 
-**Opcja A — podwójne kliknięcie:**
-```
-start.bat
-```
-
-**Opcja B — terminal (PowerShell / CMD):**
+**Opcja A — terminal (PowerShell / CMD):**
 ```cmd
 docker compose up --build
 ```
