@@ -149,8 +149,11 @@ def to_geojson_points(
                 if math.isnan(val): continue
                 features.append({
                     "type": "Feature",
-                    "geometry": {"type": "Point", "coordinates": [round(float(lons_s[i,j]),5), round(float(lats_s[i,j]),5)]},
-                    "properties": {"value": round(val, 4), "variable": variable, "units": units},
+                    "geometry": {"type": "Point", "coordinates": [float(ln), float(lt)]},
+                    "properties": {
+                        "value": round(float(val), 4),
+                        "long_name": var.attrs.get("long_name", variable) # TO DODAJ
+                    }
                 })
 
     valid = data[~np.isnan(data)]
