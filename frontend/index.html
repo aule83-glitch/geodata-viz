@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoData Viz</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body { overflow: hidden; background: #0a0e14; }
+      #root { width: 100vw; height: 100vh; }
+      /* Scrollbar dla sidebara */
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: #0d1117; }
+      ::-webkit-scrollbar-thumb { background: #1e2d3d; border-radius: 2px; }
+      ::-webkit-scrollbar-thumb:hover { background: #2a3a4a; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
